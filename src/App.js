@@ -201,7 +201,7 @@ class App extends Component {
 
     if(keyword) {
       tasks = tasks.filter((task) => {
-        return task.name.toLowerCase().indexOf(keyword) !== -1;
+        return task.name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1;
       })
     }
 
